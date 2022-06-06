@@ -26,7 +26,9 @@ body {
   padding: 0;
 }
 
+
 /* links */
+
 a {
   color: #cf1767;
   transition: all 0.3s ease-in-out;
@@ -44,7 +46,7 @@ a:active {
 }
 
 
-/* Sections and headings */
+/* Titles and paragraphs */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Frank Ruhl Libre", serif;
@@ -174,7 +176,6 @@ p.lead {
 
 /* Lists */
 
-
 ul {
   list-style: disc;
 }
@@ -196,9 +197,7 @@ ul ul {
 }
 
 
-
-
-/* Common and Reusable Styles */
+/* headings */
 
 .heading-block {
   position: relative;
@@ -269,6 +268,7 @@ ul ul {
   color: #ffffff;
 }
 
+
 /* responsive heading*/
 
 @media screen and (max-width:1200px) {
@@ -331,6 +331,7 @@ ul ul {
 
 }
 
+
 /* header */
 
 .s-header {
@@ -353,6 +354,7 @@ ul ul {
 .sticky + body {
   padding-top: 102px;
 }
+
 
 /* header logo */
 
@@ -381,7 +383,8 @@ ul ul {
   margin: 0;
 }
 
-/* navigation  */
+
+/* navigation bar */
 
 .header-nav-wrap {
   display: inline-block;
@@ -454,7 +457,8 @@ ul ul {
   color: #ffffff;
 }
 
-/* mobile menu */
+
+/* mobile navigation menu */
 
 .header-menu-toggle {
   display: none;
@@ -535,10 +539,9 @@ ul ul {
   transform: rotate(225deg);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * header
- * ------------------------------------------------------------------- */
+
+/* responsive header */
+
 @media screen and (max-width:1200px) {
   .header-main-nav {
     font-size: 12px;
@@ -633,9 +636,6 @@ ul ul {
 
 }
 
-/* -------------------------------------------------------------------
- * make sure the menu is visible on larger screens
- * ------------------------------------------------------------------- */
 @media only screen and (min-width:801px) {
   .header-nav-wrap {
     display: block !important;
@@ -644,11 +644,8 @@ ul ul {
 }
 
 
+/* -- INTRO SECTION -- */
 
-/* ===================================================================
- * # intro 
- *
- * ------------------------------------------------------------------- */
 .s-intro {
   width: 100%;
   height: 100vh;
@@ -755,10 +752,9 @@ ul ul {
   background-color: #cf1767;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * intro
- * ------------------------------------------------------------------- */
+
+/* responsive intro */
+
 @media screen and (max-width:1400px) {
   .intro-text h3 {
     font-size: 2.2rem;
@@ -904,11 +900,8 @@ ul ul {
 }
 
 
+/* -- ABOUT SECTION -- */
 
-/* ===================================================================
- * # about
- *
- * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 19.2rem;
   padding-bottom: 16.8rem;
@@ -946,9 +939,9 @@ ul ul {
   padding-left: 32px;
 }
 
-/* -------------------------------------------------------------------
- * ## timeline
- * ------------------------------------------------------------------- */
+
+/* -- EXPERIENCE -- */
+
 .about-experience__timeline {
   margin-top: 1.6rem;
 }
@@ -1074,10 +1067,9 @@ ul ul {
   margin-top: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * about
- * ------------------------------------------------------------------- */
+
+/* responsive about */
+
 @media screen and (max-width:1200px) {
   .s-about {
     padding-top: 17.2rem;
@@ -1242,11 +1234,8 @@ ul ul {
 }
 
 
+/* -- SKILLS SECTION -- */
 
-/* ===================================================================
- * # skills
- *
- * ------------------------------------------------------------------- */
 .s-skills {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
@@ -1324,10 +1313,9 @@ ul ul {
   color: #cf1767;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * skills
- * ------------------------------------------------------------------- */
+
+/* responsive skills */
+
 @media screen and (max-width:1400px) {
   .skills-list .skill {
     padding: 0 20px;
@@ -1391,11 +1379,8 @@ ul ul {
 }
 
 
+/* -- CV SUBSECTION -- */
 
-/* ===================================================================
- * # cv
- *
- * ------------------------------------------------------------------- */
 .s-cv {
   padding-top: 13.5rem;
   padding-bottom: 13.6rem;
@@ -1438,10 +1423,7 @@ ul ul {
   color: #000000;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * cv
- * ------------------------------------------------------------------- */
+/* responsive cv */
 @media screen and (max-width:800px) {
   .s-cv {
     font-size: 2.2rem;
@@ -1468,11 +1450,8 @@ ul ul {
 }
 
 
+/* -- WORKS SECTION -- */
 
-/* ===================================================================
- * # works
- *
- * ------------------------------------------------------------------- */
 .s-works {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
@@ -1506,8 +1485,9 @@ ul ul {
   transition: all 0.5s ease-in-out;
 }
 
-/* item-folio thumb
- * -------------------------------------- */
+
+/* item-folio thumb */
+
 .item-folio__thumb {
   position: relative;
   overflow: hidden;
@@ -1578,8 +1558,8 @@ ul ul {
 }
 
 
-/* item-folio text
- * ------------------------------------------------ */
+/* item-folio text */
+
 .item-folio__text {
   margin-top: 8.92%;
 }
@@ -1618,10 +1598,9 @@ ul ul {
   display: none;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * works
- * ------------------------------------------------------------------- */
+
+/* responsive works */
+
 @media screen and (max-width:1200px) {
   .myworks__brick {
     padding: 0 24px;
@@ -1758,10 +1737,8 @@ ul ul {
 }
 
 
-/* ===================================================================
- * # footer
- *
- * ------------------------------------------------------------------- */
+/* -- FOOTER SECTION -- */
+
 footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -1779,9 +1756,9 @@ footer a:visited {
   color: #ffffff;
 }
 
-/* ------------------------------------------------------------------- 
- * ## copyright
- * ------------------------------------------------------------------- */
+
+/* copyright subsection */
+
 .ss-copyright {
   margin-top: 2rem;
   padding-right: 80px;
@@ -1803,9 +1780,9 @@ footer a:visited {
   display: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## go to top
- * ------------------------------------------------------------------- */
+
+/* go to top button */
+
 .ss-go-top {
   position: absolute;
   top: -1px;
@@ -1872,10 +1849,9 @@ footer a:visited {
   top: -165px;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
+
+/* responsive footer */
+
 @media screen and (max-width:1200px) {
   .ss-go-top {
     right: 3rem;
@@ -1925,11 +1901,8 @@ footer a:visited {
 }
 
 
+/* IE10/IE11 exceptions */
 
-/* ===================================================================
- * # IE10/IE11 Specific
- *
- * ------------------------------------------------------------------- */
 html[data-useragent*='MSIE 10.0'] .ss-go-top::before,
 html[data-useragent*='MSIE 10.0'] .ss-go-top::after,
 html[data-useragent*='rv:11.0'] .ss-go-top::before,
@@ -1937,4 +1910,3 @@ html[data-useragent*='rv:11.0'] .ss-go-top::after {
   display: none;
 }
 
-/*# sourceMappingURL=main.css.map */

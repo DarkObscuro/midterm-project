@@ -74,6 +74,7 @@ li {
 
 
 /* rows */
+
 .row {
 	width: 89%;
 	max-width: 1200px;
@@ -93,13 +94,16 @@ li {
 	margin-right: -20px;
 }
 
+
 /* columns */
+
 .column {
 	-webkit-flex: 1 1 0%;
 	-ms-flex: 1 1 0%;
 	flex: 1 1 0%;
 	padding: 0 20px;
 }
+
 
 /* large screen column widths */
 
@@ -124,6 +128,7 @@ li {
 	max-width: 100%;
 }
 
+
 /* medium screen devices breakpoint */
 
 @media screen and (max-width:1200px) {
@@ -136,6 +141,7 @@ li {
 		padding: 0 16px;
 	}
 }
+
 
 /* tablets breakpoint */
 
@@ -152,7 +158,9 @@ li {
 	}
 }
 
+
 /* mobile breakpoint */
+
 @media screen and (max-width:600px) {
 	.row {
 		width: auto;
@@ -184,6 +192,7 @@ li {
 
 }
 
+
 /* small mobile breakpoint */
 
 @media screen and (max-width:400px) {
@@ -204,6 +213,7 @@ li {
 	}
 
 }
+
 
 /* Skills section responsiveness */
 
