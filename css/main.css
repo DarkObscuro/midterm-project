@@ -687,17 +687,6 @@ ul ul {
   opacity: .2;
 }
 
-.intro-grid {
-  background-image: url(../images/pattern-dot-grid.svg);
-  background-size: 24px 24px;
-  opacity: .15;
-  position: absolute;
-  top: 30%;
-  right: 0;
-  bottom: 0;
-  left: 30%;
-}
-
 .intro-text {
   -webkit-transform: translate3d(0, -3.6rem, 0);
   transform: translate3d(0, -3.6rem, 0);
@@ -1493,68 +1482,8 @@ ul ul {
   overflow: hidden;
 }
 
-.item-folio__thumb .thumb-link {
-  display: block;
-  position: relative;
-}
-
-.item-folio__thumb .thumb-link::before,
-.item-folio__thumb .thumb-link::after,
-.item-folio__thumb .thumb-link .item-folio__project-link {
-  transition: all 0.5s ease-in-out;
-}
-
-.item-folio__thumb .thumb-link::before {
-  display: block;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.item-folio__thumb .thumb-link::after {
-  display: block;
-  content: "";
-  width: 3.6rem;
-  height: 3.6rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 80%;
-  background-image: url(../images/icons/icon-plus.svg);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .item-folio__thumb img {
   vertical-align: bottom;
-}
-
-.item-folio__thumb .item-folio__project-link {
-  display: block;
-  width: 6.4rem;
-  height: 6.4rem;
-  background-color: #cf1767;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 30%;
-  background-image: url(../images/icons/icon-link.svg);
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-  z-index: 2;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 
