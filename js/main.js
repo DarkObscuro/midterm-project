@@ -16,7 +16,7 @@ function myFunction() {
   }
 }
 
-/* Mobile Menu  */ 
+// Mobile Menu
 $WIN = $(window);
 var MobileMenu = function() {
 
@@ -47,6 +47,7 @@ var MobileMenu = function() {
 
 };
 
+// Highlight current page in the header
 const scrollHandler = () => {
 
   let menu = document.querySelector('.header-main-nav')
