@@ -47,4 +47,40 @@ var MobileMenu = function() {
 
 };
 
+const scrollHandler = () => {
+
+  let menu = document.querySelector('.header-main-nav')
+
+  let intro = document.getElementById('intro');
+  let about = document.getElementById('about');
+  let skills = document.getElementById('skills');
+  let works = document.getElementById('works');
+
+  let pos_menu = window.pageYOffset + menu.offsetHeight;
+
+  let pos_intro = intro.offsetTop + intro.offsetHeight;
+  let pos_about = about.offsetTop + about.offsetHeight;
+  let pos_skills = skills.offsetTop + skills.offsetHeight;
+  let pos_works = works.offsetTop + works.offsetHeight;
+  
+  let distance_intro = pos_intro - pos_menu;
+  let distance_about = pos_about - pos_menu;
+  let distance_skills = pos_skills - pos_menu;
+  let distance_works = pos_works - pos_menu;
+
+  let min = Math.min(...[distance_intro, distance_about, distance_skills, distance_works].filter(num => num > 0));
+
+  document.querySelectorAll('.header-main-nav .Item')[0].classList.remove('current');
+  document.querySelectorAll('.header-main-nav .Item')[1].classList.remove('current');
+  document.querySelectorAll('.header-main-nav .Item')[2].classList.remove('current');
+  document.querySelectorAll('.header-main-nav .Item')[3].classList.remove('current');
+
+  if(min === distance_intro) document.querySelectorAll('.header-main-nav .Item')[0].classList.add('current');
+  if(min === distance_about) document.querySelectorAll('.header-main-nav .Item')[1].classList.add('current');
+  if(min === distance_skills) document.querySelectorAll('.header-main-nav .Item')[2].classList.add('current');
+  if(min === distance_works) document.querySelectorAll('.header-main-nav .Item')[3].classList.add('current');
+
+}
+
 MobileMenu();
+window.addEventListener('scroll', scrollHandler);
