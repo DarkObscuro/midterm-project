@@ -1,0 +1,40 @@
+div.leaflet-sidebar-pane#meeting {
+	height: 100%;
+}
+div.leaflet-sidebar-pane#meeting>div {
+	overflow: hidden;
+	flex-direction: column;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+div.leaflet-sidebar-pane#meeting ul {
+	overflow-y: auto;
+	flex: 1 0 0;
+	padding: 0;
+}
+div.leaflet-sidebar-pane#meeting li {
+	list-style: none;
+}
+div.leaflet-sidebar-pane#meeting li[data-username]::before {
+	content: attr(data-username);
+	font-weight: bold;
+	margin-right: 1em;
+}
+div.leaflet-sidebar-pane#meeting li.system {
+	font-style: italic;
+}
+
+div.leaflet-sidebar-pane#meeting form {
+	flex: 0 0 auto;
+}
+div.leaflet-sidebar-pane#meeting form>div {
+	display: flex;
+}
+div.leaflet-sidebar-pane#meeting form>div>button:not([type]) {
+	flex: 0 0 auto;
+}
+div.leaflet-sidebar-pane#meeting form>div>button[type="submit"] {
+	flex: 1 0 auto;
+}

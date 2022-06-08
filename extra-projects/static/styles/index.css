@@ -1,0 +1,98 @@
+@import url("./profile.css");
+@import url("./meeting.css");
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+div#map {
+	width: 100vw;
+	height: 100vh;
+}
+
+form#search-form {
+	display: flex;
+	width: 100%;
+}
+
+label {
+	font-size: large;
+}
+
+legend {
+	font-size: large;
+}
+
+
+input {
+	font-size: large;
+	width: 97%;
+}
+
+textarea {
+	resize: none;
+	font-size: large;
+	width: 97%;
+}
+
+form#form-coord {
+	display: flex;
+	width: 100%;
+}
+
+form#title>input[type="text"] {
+	padding: 6px 3px;
+	font-size: large;
+}
+
+input[type="number"] {
+	border: none;
+	font-size: large;
+}
+
+input[type="search"] {
+	padding: 6px 3px;
+	border: none;
+	border-bottom: 1px solid #0004;
+	font-size: large;
+}
+
+form#search-form>input[name="query"] {
+	flex: 1 0 auto;
+}
+
+output[form="search-form"]>ul {
+	padding: 0;
+}
+output[form="search-form"]>ul>li {
+	list-style: none;
+}
+output[form="search-form"]>ul>li>button {
+	text-align: left;
+	background-color: transparent;
+	cursor: pointer;
+	width: 100%;
+	padding: 4px;
+	border: none;
+	border-radius: 3px;
+	color: black;
+}
+output[form="search-form"]>ul>li>button:hover {
+	background-color: #8884;
+}
+
+article>p {
+	width: 100%;
+}
+article>p img {
+	max-width: 100%;
+}
+
+.leaflet-sidebar-tabs>li.disabled,
+.leaflet-sidebar-tabs>ul>li.disabled {
+	opacity: .25;
+	color: inherit !important;
+}
