@@ -58,7 +58,6 @@ var MobileMenu = function() {
 /*
 Highlight current page in the header
 */
-
 const scrollHandler = () => {
 
   // Get the header
